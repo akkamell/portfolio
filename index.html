@@ -178,17 +178,20 @@
 		<div>
 		<script>
 		function change(a){
-		let name=document.getElementById("name").value;
-		let msg=document.getElementById("nam").value;
-		if(name=="" || msg=="")
+		let name=document.getElementById("name");
+		let msg=document.getElementById("nam");
+		if(name.value=="" || msg.value=="")
 		console.log("msg or name are empty");
 		else{
+		name.value="";
+		msg.value="";
+		name.readOnly=true;
+		msg.readOnly=true;
 			a.style.backgroundColor="green";
 			a.value="Submited";
 			}
 		}
 		function downloadCV() {
-  // Replace "path/to/your/cv.pdf" with the actual path to your CV file
 			let fileUrl = "Myresumee.rar";
   
 			let a = document.createElement("a");
