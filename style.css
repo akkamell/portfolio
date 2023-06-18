@@ -1,12 +1,13 @@
 
-
 body{
     margin: 0;
     background-color:rgb(22, 22, 22);
- 
 }
 html{
 	scroll-behavior:smooth;
+}
+::-webkit-scrollbar{
+    display: none;
 }
 .nav{
     background-color: rgb(17, 17, 17);
@@ -233,7 +234,7 @@ html{
 	visibility:hidden;
     transition: 0.5s linear;
 	overflow:hidden;
-	opacity:0.8;
+	opacity:0.7;
    color: black;
 }
 .item-grid p{
@@ -247,16 +248,12 @@ html{
   
 }
 .chan{
-   animation:show-text 20s infinite;
-   position: absolute;
-   top:50%;
-   transform: translate(47%);
+   animation:remove-place 3s infinite;
+	font-size:1.6rem;
    color: aqua;
    opacity: 0;
 }
-.cha{
-   animation:remove-place 20s infinite;
-}
+
 .contact-us{
 		background-color:rgb(0,0,0);
 		padding-top:150px;
@@ -282,20 +279,24 @@ html{
 	background-color:rgb(64, 253, 64);
 }
 
-@keyframes remove-place{
-      0%,50%{
-         opacity: 1;
-      }
-      50%,100%{
-         opacity: 0;
-      }
+@keyframes remove-place {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-@keyframes show-text{
-   50%,100%{
-      opacity: 1;
-   }
-   0%,50%{
-      opacity:0;
-   }
-   
+@media (max-width: 650px) {
+  *{
+	padding-left:2px;
+  }
+  .nav{
+		flex-direction:column;
+		justify-content:space-between;
+		align-items:center;
+  }
 }
