@@ -326,5 +326,7 @@ html{
 .cntct{
    flex-direction: column;
 }
-
+#hideimgg{
+   display:none;
+}
 }
