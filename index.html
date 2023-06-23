@@ -35,13 +35,13 @@
                 <div><button onclick="downloadCV()">Download cv</button></div>
             </div>
             <div class="first-section-img" >
-               <img src="./antoine.jpg" alt="me" style="width: 400px; height: 400px;">
+               <img src="./antoine.jpg" alt="me" class="me_img" >
             </div>
         </div>
         <!--about me section-->
         <div class="second-section" id="ab">
             <div class="second-section-image">
-                <img src="./antoine.jpg" alt="me" style="width: 400px; height: 400px;">
+                <img src="./antoine.jpg" alt="me" class="me_img">
             </div>
             <div class="second-section-text">
                 <h2 >About <span style="color:aqua">Me</span></h2>
@@ -181,12 +181,12 @@
 		let name=document.getElementById("name");
 		let msg=document.getElementById("nam");
 		if(name.value=="" || msg.value=="")
-			console.log("msg or name are empty");
+		console.log("msg or name are empty");
 		else{
-			name.value="";
-			msg.value="";
-			name.readOnly=true;
-			msg.readOnly=true;
+		name.value="";
+		msg.value="";
+		name.readOnly=true;
+		msg.readOnly=true;
 			a.style.backgroundColor="green";
 			a.value="Submited";
 			}
