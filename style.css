@@ -293,7 +293,7 @@ html{
 @media (max-width: 650px) {
   *{
 	padding-left:2px;
-	  padding-right:2px;
+	  width:100%;
   }
   .nav{
 		flex-direction:column;
