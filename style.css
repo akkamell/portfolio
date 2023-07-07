@@ -264,7 +264,7 @@ html{
      padding-top:150px;
      color:white;
      text-align:center;
-     padding-bottom:150px;
+     padding-bottom:20px;
 }
 #name:focus{
   background-color:wheat;
@@ -311,7 +311,7 @@ html{
   padding-left:2px;
     
  }
-   .grids-items{
+ .grids-items{
    grid-template-columns: 1fr 1fr;
  }
  .nav{
@@ -320,8 +320,8 @@ html{
      align-items:center;
  }
  .me_img{
-   width: 350px;
-   height: 350px;
+   width: 300px;
+   height: 300px;
  }
  #sen{
    width: 250px;
