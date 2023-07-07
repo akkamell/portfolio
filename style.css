@@ -311,6 +311,9 @@ html{
   padding-left:2px;
     
  }
+   .grids-items{
+   grid-template-columns: 1fr 1fr;
+ }
  .nav{
      flex-direction:column;
      justify-content:space-between;
